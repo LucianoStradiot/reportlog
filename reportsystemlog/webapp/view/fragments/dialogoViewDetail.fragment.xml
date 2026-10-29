@@ -1,0 +1,24 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+	xmlns:u="sap.ui.unified"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout">
+	<Dialog title="Detalle" contentWidth="550px" contentHeight="auto">
+		<content>
+			<f:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="2" labelSpanL="2" labelSpanM="2" labelSpanS="2" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false">
+				<f:content>
+					<VBox>
+						<TextArea rows="10" height="auto" width="100%" value="{oModelView>/DETAIL_TEXT}" editable="false"/>
+						<layoutData>
+							<l:GridData span="XL12 L12 M12 S12"/>
+						</layoutData>
+					</VBox>	
+					
+				</f:content>
+			</f:SimpleForm>
+		</content>
+		<buttons>
+			<Button text="{i18n>cerrar}" press="dialogViewDetailClose"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,38 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog confirm="handleFilterDialogConfirm" resetFilters="onResetFilter">
+		<filterItems>
+			<ViewSettingsFilterItem text="{i18n>description}" key="DESCRIPTION" multiSelect="false" items="{oModelFilter1>/}">
+				<items>
+					<ViewSettingsItem text="{oModelFilter1>key}" key="{oModelFilter1>key}"/>
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="{i18n>origen}" key="LOCATION" multiSelect="false" items="{oModelFilter2>/}">
+				<items>
+					<ViewSettingsItem text="{oModelFilter2>text}" key="{oModelFilter2>key}"/>
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="{i18n>accion}" key="ACTION" multiSelect="false" items="{oModelFilter3>/}">
+				<items>
+					<ViewSettingsItem text="{oModelFilter3>text}" key="{oModelFilter3>key}"/>
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="{i18n>usuario}" key="CREATION_USER" multiSelect="false" items="{oModelFilter4>/}">
+				<items>
+					<ViewSettingsItem text="{oModelFilter4>text}" key="{oModelFilter4>key}"/>
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="{i18n>fecha}" key="OBJ_DATE_STRING" multiSelect="false" items="{oModelFilter5>/}">
+				<items>
+					<ViewSettingsItem text="{oModelFilter5>text}" key="{oModelFilter5>key}"/>
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="{i18n>app}" key="APP_DESCRIPTION" multiSelect="false" items="{oModelFilter6>/}">
+				<items>
+					<ViewSettingsItem text="{oModelFilter6>text}" key="{oModelFilter6>key}"/>
+				</items>
+			</ViewSettingsFilterItem>
+
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>	
